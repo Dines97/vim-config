@@ -1,3 +1,14 @@
+"
+" ██████   █████                                ███                 
+"░░██████ ░░███                                ░░░                  
+" ░███░███ ░███   ██████   ██████  █████ █████ ████  █████████████  
+" ░███░░███░███  ███░░███ ███░░███░░███ ░░███ ░░███ ░░███░░███░░███ 
+" ░███ ░░██████ ░███████ ░███ ░███ ░███  ░███  ░███  ░███ ░███ ░███ 
+" ░███  ░░█████ ░███░░░  ░███ ░███ ░░███ ███   ░███  ░███ ░███ ░███ 
+" █████  ░░█████░░██████ ░░██████   ░░█████    █████ █████░███ █████
+"░░░░░    ░░░░░  ░░░░░░   ░░░░░░     ░░░░░    ░░░░░ ░░░░░ ░░░ ░░░░░ 
+"                                                                   
+
 call plug#begin()
 	Plug 'joshdick/onedark.vim'
 	Plug 'sheerun/vim-polyglot'
@@ -6,6 +17,7 @@ call plug#begin()
 	Plug 'mhinz/vim-startify'
 	Plug 'airblade/vim-gitgutter'
 	Plug 'itchyny/lightline.vim'
+  Plug 'Yggdroot/indentLine'
 call plug#end()
 
 " Fast open main config files
