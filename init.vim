@@ -10,13 +10,28 @@
 "
 
 call plug#begin()
+  "One dark theme
   Plug 'joshdick/onedark.vim'
+
+  "Language pack for syntax highlight
   Plug 'sheerun/vim-polyglot'
+  
+  "Language client
   Plug 'neoclide/coc.nvim', {'branch': 'release'}
+  
+  "File explorer
   Plug 'preservim/nerdtree'
+
+  "Fancy start screen
   Plug 'mhinz/vim-startify'
+
+  "Git diff markers in gutter
   Plug 'airblade/vim-gitgutter'
+
+  "Configurable status line plugin 
   Plug 'itchyny/lightline.vim'
+
+  "Indention level lines
   Plug 'Yggdroot/indentLine'
 call plug#end()
 
