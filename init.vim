@@ -17,7 +17,7 @@ call plug#begin()
   Plug 'sheerun/vim-polyglot'
   
   "Language client
-  Plug 'neoclide/coc.nvim', {'branch': 'release'}
+  "Plug 'neoclide/coc.nvim', {'branch': 'release'}
   
   "File explorer
   Plug 'preservim/nerdtree'
@@ -33,6 +33,20 @@ call plug#begin()
 
   "Indention level lines
   Plug 'Yggdroot/indentLine'
+
+
+  Plug 'Xuyuanp/nerdtree-git-plugin'
+
+  
+  Plug 'ryanoasis/vim-devicons'
+
+  
+  Plug 'drmikehenry/vim-headerguard'
+
+
+  Plug 'sakhnik/nvim-gdb', { 'do': ':!./install.sh' }
+
+  Plug 'dense-analysis/ale'
 call plug#end()
 
 " Fast open main config files
@@ -84,5 +98,19 @@ set spelllang=en
 set spell spelllang=en
 
 " :W will save current file with sudo
-command W :execute ':silent w !sudo tee % > /dev/null' | :edit!
+command WW :execute ':silent w !sudo tee % > /dev/null' | :edit!
+
+
+let NERDTreeShowHidden=1
+
+
+tnoremap <Esc> <C-\><C-n>
+
+
+nmap <leader>qf  <Plug>(coc-fix-current)
+
+
+" Symbol renaming.
+nmap <leader>rn <Plug>(coc-rename)
+
 
